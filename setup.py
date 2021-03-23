@@ -3,6 +3,7 @@ import json
 from spotipy.oauth2 import SpotifyClientCredentials
 import pprint 
 import spotipy.util as util
+import requests
 pp = pprint.PrettyPrinter(indent=1)
 
 
