@@ -43,7 +43,7 @@ def checkPlaylistExists(genre, playlistNames):
 def getPlaylistID(playlistName, username):
 	foundID = False
 	offset = 0
-	while(not foundID):
+	while(True):
 		#THIS HAS A LIMIT OF 50 SO THATS WHY IM IN A WHILE LOOP AHHHH FML
 		playlistsData = sp.user_playlists(username, offset = offset)
 
@@ -51,7 +51,7 @@ def getPlaylistID(playlistName, username):
 			if item['name'] == playlistName:
 				playlistID = item['id']
 				return playlistID
-		foundID = False
+
 		offset += 50
 
 def addSongToPlaylist(playlistID, trackID):
