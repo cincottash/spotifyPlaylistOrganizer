@@ -12,9 +12,6 @@ clientID = '**************'
 userID = '**************'
 clientSecret = '**************'
 
-#client_credentials_manager = SpotifyClientCredentials(client_id=clientID, client_secret='47030e7e93314cefbc42ef18d9e1e705')
-#sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
-
 username = userID
 token = util.prompt_for_user_token(
     scope='playlist-modify-public playlist-modify-private', 
